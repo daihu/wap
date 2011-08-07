@@ -77,7 +77,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("</p>\r\n");
       out.write("</div>\r\n");
-      out.write("\r\n");
+      out.write("<div align=\"center\"><img src=\"img/jmgj_banner.jpg\" width=\"978\" height=\"254\" hspace=\"0\" vspace=\"0\" border=\"0\" />\r\n");
+      out.write("</div>\r\n");
       out.write("\r\n");
       out.write("<div class=\"foot\">\r\n");
       out.write("<p>www.zhazh.com</p>\r\n");

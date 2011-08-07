@@ -24,7 +24,8 @@
 
 </p>
 </div>
-
+<div align="center"><img src="img/jmgj_banner.jpg" width="978" height="254" hspace="0" vspace="0" border="0" />
+</div>
 
 <div class="foot">
 <p>www.zhazh.com</p>
