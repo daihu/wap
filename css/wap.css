@@ -1,0 +1,32 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: "宋体";
+	font-size:14px;
+	color:#000000;
+	line-height:150%;
+}
+.top{
+	text-align:center; 
+	padding:5px 0px; 
+	background-color:#504f4d;
+	border:0px;
+}
+
+.foot{
+	text-align:center; 
+	padding:5px 0px; 
+	background-color:#504f4d;
+	border:0px;
+	color: #fd8306
+}
+.center{
+	background-color:#c7c4bd;
+	padding:2px;
+	border:3px #ffffff solid;
+	line-height:180%;
+	text-align:left;
+}
+

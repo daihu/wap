@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <%@page import="java.util.HashMap"%> 
+<%@page import="com.zhazh.wap.BizInvoker"%> 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Zhazh手机报名</title>
+<link href="css/wap.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<div class="top">
+	<img src="img/logo.gif" alt="" width="132" height="29" hspace="0" vspace="0" border="0" />
+</div>
+<div class="center">
+<p>
+
+<strong>【活动介绍】</strong><br/>
+Zhazh是一个基于位置的专业二手物品交易平台，欢迎使用！<br />
+</p>
+</div>
+<div class="center">
+<p>
+<strong>【按手机品牌下载】</strong><br/>
+<%
+BizInvoker v = new BizInvoker().setPageSize(6).invoke("client","getVendors",3600);
+for(int i = 0; i < v.getDatas().length; i++){
+	Object[] row = (Object[])v.getDatas()[i];
+	out.print(String.format("<a href=devices.jsp?vid=%d>%s</a>", row[0], row[2]));
+	if (i != v.getDatas().length -1){
+		out.print(" | ");
+	}
+}
+if (v.getTotalResults() > 6){
+	out.print(String.format(" | <a href=vendors.jsp>更多...</a>"));
+}
+%>
+
+</p>
+</div>
+
+<div class="center">
+<p>
+<strong>【按手机平台下载】</strong><br/>
+<%
+BizInvoker p = new BizInvoker().setPageSize(10).invoke("client","getPlatforms",3600);
+for(int i = 0; i < p.getDatas().length; i++){
+	Object[] row = (Object[])p.getDatas()[i];
+	out.print(String.format("<a href=clients.jsp?pid=%d>%s</a>", row[0], row[1]));
+	if (i != p.getDatas().length -1){
+		out.print(" | ");
+	}
+}
+
+%>
+</p>
+</div>
+
+<div class="foot">
+<p>www.zhazh.com</p>
+</div>
+</body>
+</html>
