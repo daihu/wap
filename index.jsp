@@ -12,6 +12,8 @@
 <body>
 <div class="top">
 	<img src="img/logo.gif" alt="" width="132" height="29" hspace="0" vspace="0" border="0" />
+<div align="center"><img src="img/jmgj_banner.jpg" width="978" height="254" hspace="0" vspace="0" border="0" />
+</div>
 </div>
 <div class="center">
 <p>
@@ -24,8 +26,7 @@
 
 </p>
 </div>
-<div align="center"><img src="img/jmgj_banner.jpg" width="978" height="254" hspace="0" vspace="0" border="0" />
-</div>
+
 
 <div class="foot">
 <p>www.zhazh.com</p>

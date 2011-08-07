@@ -11,19 +11,19 @@ body {
 .top{
 	text-align:center; 
 	padding:5px 0px; 
-	background-color:white;
+	background-color:#504f4d;
 	border:0px;
 }
 
 .foot{
 	text-align:center; 
 	padding:5px 0px; 
-	background-color:white;
+	background-color:#504f4d;
 	border:0px;
 	color: #fd8306
 }
 .center{
-	background-color:white;
+	background-color:#c7c4bd;
 	padding:2px;
 	border:3px #ffffff solid;
 	line-height:180%;
